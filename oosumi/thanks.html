@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./js/jquery.inview.min.js"></script>
+    <title>Contact</title>
+</head>
+
+<body>
+
+    <body>
+        <header id="header_p">
+            <div class="header__inner_p">
+                <h1 class="logo1"><img src="image/2x/2x/title@2x.png" alt="ポートフォリオ">
+                </h1>
+                <nav class="gnav">
+                    <ul>
+                        <li><a href="index.html">ホーム
+                                <span>Home</span>
+                            </a></li>
+                        <li><a href="comcept.html">概念
+                                <span>Concept</span>
+                            </a></li>
+                        <li><a href="about.html">私について
+                                <span>About me</span>
+                            </a></li>
+                        <li><a href="works.html">制作物
+                                <span>Works</span>
+                            </a></li>
+                        <li><a href="contact.html">お問い合わせ
+                                <span>Contact</span>
+                            </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <header id="header__sp">
+            <h1 class="logo1_sp"><img src="image/2x/2x/title@2x.png" alt="ポートフォリオ">
+            </h1>
+            <div class="hamberger">
+                <span></span>
+            </div>
+
+            <nav class="sp__nav">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="comcept.html">Concept</a></li>
+                    <li><a href="about.html">About me</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="contact">
+            <div class="contact_wrap js-fade">
+                <div class="contact_title">Contact<br>
+                    <span>お問い合わせ</span>
+                </div>
+            </div>
+
+            <div class="contact_content js-fade">
+                <p><img src="image/2x/mail@2x.png" alt=""></p>
+                <p class="contact_text">お問い合わせ頂きありがとうございました！</p>
+                <div class="box"><a href="index.html" class="button">トップページへ</a></div>
+            </div>
+
+
+            <section id="fotter">
+                <div class="fotter_menu">
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="comcept.html">概念</a></li>
+                        <li><a href="about.html">私について</a></li>
+                        <li><a href="works.html">制作物</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                    <p>©️ Asuka Kiyota</p>
+                </div>
+            </section>
+
+            <script>
+
+                let submitted = false;
+
+                $(function () {
+                    $(".js-fade").on("inview", function () {
+                        $(this).addClass("inview");
+                    });
+                });
+
+
+                $('.hamberger').on('click', function () {
+                    $('.sp__nav').fadeToggle();
+                    $('.hamberger').toggleClass('open');
+                });
+            </script>
+
+    </body>
+
+</html>

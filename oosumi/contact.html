@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./js/jquery.inview.min.js"></script>
+    <title>Contact</title>
+</head>
+
+<body>
+
+    <header id="header_p">
+        <div class="header__inner_p">
+            <h1 class="logo1"><img src="image/2x/2x/title@2x.png" alt="ポートフォリオ">
+            </h1>
+            <nav class="gnav">
+                <ul>
+                    <li><a href="index.html">ホーム
+                            <span>Home</span>
+                        </a></li>
+                    <li><a href="comcept.html">概念
+                            <span>Concept</span>
+                        </a></li>
+                    <li><a href="about.html">私について
+                            <span>About me</span>
+                        </a></li>
+                    <li><a href="works.html">制作物
+                            <span>Works</span>
+                        </a></li>
+                    <li><a href="contact.html">お問い合わせ
+                            <span>Contact</span>
+                        </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <header id="header__sp">
+        <h1 class="logo1_sp"><img src="image/2x/2x/title@2x.png" alt="ポートフォリオ">
+        </h1>
+        <div class="hamberger">
+            <span></span>
+        </div>
+
+        <nav class="sp__nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="comcept.html">Concept</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contactpage">
+        <div class="contact_wrap js-fade">
+            <div class="contact_title">Contact<br>
+                <span>お問い合わせ</span>
+            </div>
+        </div>
+
+        <p class="contact_text js-fade">お気軽にお問い合わせください。</p>
+
+        <form
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeCTIak3gS6762aX-yTEmqq7A05lFMIxlaAcLT3O80_HJ-zKQ/formResponse"
+            method="POST" target="hidden_iframe" onsubmit="submitted=true;" class="c-form js-fade">
+
+            <div class=" Form">
+                <div class="Form-Item">
+                    <p class="Form-Item-Label">お名前（必須）
+                    </p>
+                    <input name="entry.1541465295" type="text" class="Form-Item-Input" placeholder="">
+                </div>
+                <div class="Form-Item">
+                    <p class="Form-Item-Label">メールアドレス（必須）</p>
+                    <input name="entry.806432029" type="text" class="Form-Item-Input" placeholder="">
+                </div>
+                <div class="Form-Item">
+                    <p class="Form-Item-Label">電話番号</p>
+                    <input name="entry.828743060" type="text" class="Form-Item-Input" placeholder="">
+                </div>
+                <div class="Form-Item">
+                    <p class="Form-Item-Label isMsg">お問い合わせ内容（必須）</p>
+                    <textarea name="entry.358279998" class="Form-Item-Textarea"></textarea>
+                </div>
+                <input type="checkbox" id="name">
+                <label for="name">お問い合せ内容を確認しました。</label>
+                <p><button type="submit">内容を送信する</button></p>
+            </div>
+        </form>
+    </section>
+
+    <section id="fotter">
+        <div class="fotter_menu">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="comcept.html">概念</a></li>
+                <li><a href="about.html">私について</a></li>
+                <li><a href="works.html">制作物</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+            <p>©️ Asuka Kiyota</p>
+        </div>
+    </section>
+
+    <script>
+
+        let submitted = false;
+
+        $(function () {
+            $(".js-fade").on("inview", function () {
+                $(this).addClass("inview");
+            });
+        });
+
+
+        $('.hamberger').on('click', function () {
+            $('.sp__nav').fadeToggle();
+            $('.hamberger').toggleClass('open');
+        });
+    </script>
+
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+        onload="if(submitted){window.location='thanks.html';}"></iframe>
+
+</body>
+
+</html>

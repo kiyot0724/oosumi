@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./js/jquery.inview.min.js"></script>
+    <script src="./js/mixitup.min.js"></script>
+    <script type="text/javascript"></script>
+    <title>Works</title>
+</head>
+
+<body>
+
+    <body>
+        <header id="header_p">
+            <div class="header__inner_p">
+                <h1 class="logo1"><img src="image/2x/2x/title@2x.png" alt="ポートフォリオ">
+                </h1>
+                <nav class="gnav">
+                    <ul>
+                        <li><a href="index.html">ホーム
+                                <span>Home</span>
+                            </a></li>
+                        <li><a href="comcept.html">概念
+                                <span>Concept</span>
+                            </a></li>
+                        <li><a href="about.html">私について
+                                <span>About me</span>
+                            </a></li>
+                        <li><a href="works.html">制作物
+                                <span>Works</span>
+                            </a></li>
+                        <li><a href="contact.html">お問い合わせ
+                                <span>Contact</span>
+                            </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <header id="header__sp">
+            <h1 class="logo1_sp"><img src="image/2x/2x/title@2x.png" alt="ポートフォリオ">
+            </h1>
+            <div class="hamberger">
+                <span></span>
+            </div>
+
+            <nav class="sp__nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="concept.html">Concept</a></li>
+                    <li><a href="about.html">About me</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <section class="workspage js-fade">
+            <div class="workspage_wrap js-fade">
+                <div class="works_title">Works<br>
+                    <span>制作物</span>
+                </div>
+                <dl class="sub-nav workspage_list">
+                    <dd class="filter active" data-filter="all">
+                        <a href="#all">All</a>
+                    </dd>
+                    <dd class="filter" data-filter=".web">
+                        <a href="#web">Webデザイン</a>
+                    </dd>
+                    <dd class="filter" data-filter=".banner">
+                        <a href="#banner">バナー</a>
+                    </dd>
+                    <dd class="filter" data-filter=".other"><a href="#other">その他</a></dd>
+                </dl>
+
+                <dl class="sub-nav workspage_list_sp">
+                    <dd class="filter active" data-filter="all">
+                        <a href="#all">All</a>
+                    </dd>
+                    <dd class="filter" data-filter=".web">
+                        <a href="#web">Webデザイン</a>
+                    </dd>
+                    <dd class="filter" data-filter=".banner">
+                        <a href="#banner">バナー</a>
+                    </dd>
+                    <dd class="filter" data-filter=".other"><a href="#other">その他</a></dd>
+                </dl>
+
+                <hr color="#efe6ce" noshade size="0.1">
+                <div id="Container">
+                    <div class="workspage_img">
+                        <div class="mix banner works_content_banner" data-myorder="1">
+                            <a href="works/worksbanner.html"><img src="image/2x/works1_2@2x-100.jpg" alt="" />
+                                <div class="hover__mask2">
+                                    <p class="hover_mask2">
+                                        ○○○ 様
+                                        <br />
+                                    </p>
+                                </div>
+                            </a>
+                            <p>スマホの料金プラン案内（架空）</p>
+                            <span>バナー</span>
+                        </div>
+                        <div class="mix banner works_content_banner" data-myorder="10">
+                            <a href="works/worksbanner2.html">
+                                <img src="image/2x/works2_1@2x-100.jpg" alt="">
+                                <div class="hover__mask2">
+                                    <p class="hover_mask2">
+                                        ○○○ 様
+                                        <br>
+                                    </p>
+                                </div>
+                            </a>
+                            <p>旅行サイトアプリの宣伝バナー（架空）</p>
+                            <span>バナー</span>
+                        </div>
+                        <div class="mix banner works_content_banner" data-myorder="20">
+                            <a href="works/worksbanner3-1.html">
+                                <img src="image/2x/works3_2@2x-100.jpg" alt="">
+                                <div class="hover__mask2">
+                                    <p class="hover_mask2">
+                                        ○○○ 様
+                                        <br>
+                                    </p>
+                                </div>
+                            </a>
+                            <p>ハンバーガーの販促バナー（架空）</p>
+                            <span>バナー</span>
+                        </div>
+                        <div class="mix banner works_content_banner" data-myorder="1000">
+                            <a href="works/worksbanner3-2.html"><img src="image/2x/works3_1@2x-100.jpg" alt="">
+                                <div class="hover__mask2">
+                                    <p class="hover_mask2">
+                                        ○○○ 様
+                                        <br>
+                                    </p>
+                                </div>
+                            </a>
+                            <p>ハンバーガーの販促バナー（架空）</p>
+                            <span>バナー</span>
+                        </div>
+                        <div class="mix web works_content_web" data-myorder="60">
+                            <a href="works/work4.html"><img src="image/2x/works4@2x-100.jpg" alt="">
+                                <div class="hover__mask2">
+                                    <p class="hover_mask2">
+                                        ○○○ 様
+                                        <br>
+                                    </p>
+                                </div>
+                            </a>
+                            <p>ワーキングスペースのLP（架空）</p>
+                            <span>Webデザイン</span>
+                        </div>
+                        <div class="mix web works_content_web" data-myorder="700">
+                            <a href="works/works5.html"><img src="image/2x/works5_1@2x-100.jpg" alt="">
+                                <div class="hover__mask2">
+                                    <p class="hover_mask2">
+                                        ○○○ 様
+                                        <br>
+                                    </p>
+                                </div>
+                            </a>
+                            <p>美容室のLP（架空）</p>
+                            <span>Webデザイン</span>
+                        </div>
+                        <div class="mix other works_content_web" data-myorder="300">
+                            <a href="works/works6.html"><img src="image/2x/works6@2x-100.jpg" alt="">
+                                <div class="hover__mask2">
+                                    <p class="hover_mask2">
+                                        ○○○ 様
+                                        <br>
+                                    </p>
+                                </div>
+                            </a>
+                            <p>カフェのWebサイト（架空）</p>
+                            <span>Webデザイン</span>
+                        </div>
+                        <div class="mix banner works_content_banner" data-myorder="30">
+                            <a href="works/worksbanner6.html"><img src="image/2x/works6-2@2x-100.jpg" alt="">
+                                <div class="hover__mask2">
+                                    <p class="hover_mask2">
+                                        ○○○ 様
+                                        <br>
+                                    </p>
+                                </div>
+                            </a>
+                            <p>オンライン英会話教室の広告（架空）</p>
+                            <span>Webデザイン</span>
+                        </div>
+                        <div class="mix banner works_content_banner" data-myorder="500">
+                            <a href="works/works7.html"><img src="image/2x/works7.jpg" alt="">
+                                <div class="hover__mask2">
+                                    <p class="hover_mask2">
+                                        ○○○ 様
+                                        <br>
+                                    </p>
+                                </div>
+                            </a>
+                            <p>音楽イベントの広告（架空）</p>
+                            <span>Webデザイン</span>
+                        </div>
+                        <div class="mix banner works_content_banner" data-myorder="70">
+                            <a href="works/works8.html"><img src="image/2x/works8.jpg" alt="">
+                                <div class="hover__mask2">
+                                    <p class="hover_mask2">
+                                        ○○○ 様
+                                        <br>
+                                    </p>
+                                </div>
+                            </a>
+                            <p>恵方巻の販促広告（架空）</p>
+                            <span>Webデザイン</span>
+                        </div>
+                        <div class="mix other works_content_web" data-myorder="80">
+                            <a href="works/works9.html"><img src="image/2x/works9.jpg" alt="">
+                                <div class="hover__mask2">
+                                    <p class="hover_mask2">
+                                        ○○○ 様
+                                        <br>
+                                    </p>
+                                </div>
+                            </a>
+                            <p>結婚式招待状(イラスト)</p>
+                            <span>Webデザイン</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fotter">
+            <div class="fotter_menu">
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="comcept.html">概念</a></li>
+                    <li><a href="about.html">私について</a></li>
+                    <li><a href="works.html">制作物</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+                <p>©️ Asuka Kiyota</p>
+            </div>
+        </section>
+        <script>
+
+            $(function () {
+                $(".js-fade").on("inview", function () {
+                    $(this).addClass("inview");
+                });
+            });
+
+
+            $('.hamberger').on('click', function () {
+                $('.sp__nav').fadeToggle();
+                $('.hamberger').toggleClass('open');
+            });
+
+            $(function () {
+                $("#Container").mixItUp();
+            });
+        </script>
+
+        </script>
+    </body>
+
+</html>

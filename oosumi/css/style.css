@@ -625,7 +625,7 @@ body{
 
 
 #fotter{
-    width: 100%;
+    width: 1080px;
     height: 268px;
     background-image: url(../image/2x/fotter_haikei@2x.png);
     background-size: cover;
@@ -647,6 +647,7 @@ body{
 
 .fotter_menu li{
     font-size: 16px;
+    color:#2b3f49
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;   
 }
 

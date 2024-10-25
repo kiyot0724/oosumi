@@ -627,7 +627,7 @@ body{
 #fotter{
     width: 1080px;
     height: 268px;
-    
+    align-items: center;
 }
 
 
@@ -635,7 +635,6 @@ body{
     margin: 0 auto;
     max-width: 564px;
     padding-top: 90px;
-    align-items: center;
 }
 
 .fotter_menu ul{
@@ -653,11 +652,6 @@ body{
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;   
 }
 
-.fotter_menu a{
-    font-size: 16px;
-    color: #2b3f49;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;   
-}
 
 .fotter_menu p{
     font-size: 10px;

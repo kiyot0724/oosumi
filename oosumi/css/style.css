@@ -627,7 +627,7 @@ body{
 #fotter{
     width: 1080px;
     height: 268px;
-    align-items: center;
+    margin: 0 auto;
 }
 
 
@@ -635,17 +635,6 @@ body{
     margin: 0 auto;
     max-width: 564px;
     padding-top: 90px;
-    max-width: 1730px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 70px 0 70px;
-    position: absolute;
-    top: 65px;
-    z-index: 9998;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 .fotter_menu ul{
